@@ -1,0 +1,129 @@
+{
+  "screen": {
+    "left": 0,
+    "top": 0,
+    "width": 1920,
+    "height": 1080
+  },
+  "game_window_title": "",
+  "marker_hsv_low": [
+    0,
+    120,
+    80
+  ],
+  "marker_hsv_high": [
+    12,
+    255,
+    255
+  ],
+  "marker_hsv_low2": [
+    168,
+    120,
+    80
+  ],
+  "marker_hsv_high2": [
+    180,
+    255,
+    255
+  ],
+  "marker_min_area": 150,
+  "close_area": 3000,
+  "arrive_on_vanish": true,
+  "vanish_ratio": 0.5,
+  "steer_mode": "camera",
+  "camera_gain": 0.06,
+  "camera_max_step": 40,
+  "horizontal_deadzone": 40,
+  "camera_search": true,
+  "search_turn_px": 35,
+  "search_timeout": 14.0,
+  "approach_key": "w",
+  "sprint_key": "shift",
+  "left_key": "a",
+  "right_key": "d",
+  "back_key": "s",
+  "jump_key": "space",
+  "interact_key": "e",
+  "stuck": {
+    "enabled": true,
+    "check_interval": 0.4,
+    "diff_threshold": 1.0,
+    "seconds": 1.6,
+    "max_consecutive": 6
+  },
+  "minigame": {
+    "enabled": true,
+    "roi": [
+      580,
+      340,
+      760,
+      280
+    ],
+    "green_low": [
+      35,
+      60,
+      60
+    ],
+    "green_high": [
+      90,
+      255,
+      255
+    ],
+    "white_low": [
+      0,
+      0,
+      200
+    ],
+    "white_high": [
+      180,
+      40,
+      255
+    ],
+    "zone_close_px": 25,
+    "min_zone_px": 8,
+    "min_zone_area": 30,
+    "min_slider_area": 6,
+    "confirm_frames": 2,
+    "action_key": "e",
+    "timeout_seconds": 18
+  },
+  "predict_latency_ms": 30,
+  "minigame_start_timeout": 4.0,
+  "minigame_start_retries": 2,
+  "pickup_retries": 3,
+  "pickup_anim_wait": 2.5,
+  "delivery_anim_wait": 1.8,
+  "interaction_cooldown": 1.8,
+  "start_delay_seconds": 5,
+  "max_run_minutes": 120,
+  "max_fail_streak": 5,
+  "idle_watchdog_minutes": 4,
+  "start_shift": {
+    "enabled": false,
+    "steps": [
+      {
+        "type": "key",
+        "key": "e"
+      },
+      {
+        "type": "wait",
+        "sec": 1.2
+      },
+      {
+        "type": "click_template",
+        "name": "start_shift.png",
+        "timeout": 6,
+        "required": false
+      }
+    ]
+  },
+  "watch": {
+    "shift_end_template": "shift_end.png",
+    "check_interval": 3.0
+  },
+  "template_threshold": 0.82,
+  "pay_per_box": 11.0,
+  "hotkey_start": "f6",
+  "hotkey_stop": "f7",
+  "csv_log": true
+}
